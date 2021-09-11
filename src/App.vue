@@ -12,7 +12,7 @@
       <v-divider></v-divider>
 
       <v-list dense nav>
-        <v-list-item link :to="{ name: 'Dashboard' }">
+        <v-list-item :to="{ name: 'Dashboard' }">
           <v-list-item-icon>
             <v-icon>mdi-view-dashboard</v-icon>
           </v-list-item-icon>
@@ -22,7 +22,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item link :to="{ name: 'Servers' }">
+        <v-list-item :to="{ name: 'Servers' }">
           <v-list-item-icon>
             <v-icon>mdi-server</v-icon>
           </v-list-item-icon>

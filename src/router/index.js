@@ -2,6 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
 import Servers from "../views/Servers.vue";
+import Players from "@/views/Players.vue";
+import Player from "@/views/Player.vue";
 
 Vue.use(VueRouter);
 
@@ -20,6 +22,22 @@ const routes = [
     component: Servers,
     meta: {
       title: "Servers",
+    },
+  },
+  {
+    path: "/players",
+    name: "Players",
+    component: Players,
+    meta: {
+      title: "Players",
+    },
+  },
+  {
+    path: "/players/:uuid",
+    name: "Player",
+    component: Player,
+    meta: {
+      title: "Player",
     },
   },
   {
